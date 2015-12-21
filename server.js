@@ -14,13 +14,6 @@ server.route({
     }
 });
 
-server.route({
-    method: 'GET',
-    path: '/{name}',
-    handler: function (request, reply) {
-        reply('Hello, ' + encodeURIComponent(request.params.name) + '!');
-    }
-});
 
 
 server.register({
@@ -36,7 +29,7 @@ server.register({
     }
 }, function (err) {
     if (err) {
-        throw err; // something bad happened loading the plugin
+        throw err;
     }
 
     server.start(function () {
