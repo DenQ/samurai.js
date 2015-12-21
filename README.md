@@ -1,3 +1,3 @@
-# hapi-samurai
-Boilerplate on hapi js a framework
+# samurai.js
+This Js framework will be typed with on based hapi js framework.
 
