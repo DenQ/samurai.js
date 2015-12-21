@@ -4,4 +4,7 @@ var server = require('./server');
 
 
 const requireDir = require('require-dir');
-const dir = requireDir('./routes');
+const routes = requireDir('./routes', {recurse: true});
+for(var item in routes) {
+    new routes[item]();
+}

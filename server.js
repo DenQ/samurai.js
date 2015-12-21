@@ -4,7 +4,7 @@ const Hapi = require('hapi');
 const server = new Hapi.Server();
 const Good = require('good');
 
-server.connection({port: 3005});
+server.connection({port: 5200});
 
 server.register({
     register: Good,

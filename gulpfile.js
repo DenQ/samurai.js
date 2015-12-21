@@ -3,7 +3,7 @@ var nodemon = require('nodemon');
 var watch = require('gulp-watch');
 
 nodemon({
-    script: 'server.js',
+    script: 'app.js',
     ext: 'js html',
     env: {
         'NODE_ENV': 'development'
@@ -11,9 +11,8 @@ nodemon({
 });
 
 gulp.task('watch', function () {
-    watch('server.js', function () {
+    watch(['server.js', './routes/**/*'], function () {
         nodemon.restart();
-        console.log('Server has restarted...');
     });
 });
 
