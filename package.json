@@ -19,7 +19,8 @@
   "dependencies": {
     "good": "^6.4.0",
     "good-console": "^5.2.0",
-    "hapi": "^11.1.2"
+    "hapi": "^11.1.2",
+    "require-dir": "^0.3.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
