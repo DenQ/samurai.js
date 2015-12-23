@@ -1,9 +1,12 @@
 'use strict';
-var server = require('./../server');
 
-class User {
+var server = require('./../server');
+var Samurai = require('../lib/samurai');
+
+class User extends Samurai.Route{
 
     constructor() {
+        super();
         //@howto: extract base class, and split constructor on REST methods
         server.route({
             method: 'GET',
