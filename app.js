@@ -1,10 +1,8 @@
 'use strict';
 
-var server = require('./server');
+var requireDir = require('require-dir');
+var routes = requireDir('./routes', {recurse: true});
 
-
-const requireDir = require('require-dir');
-const routes = requireDir('./routes', {recurse: true});
 for(var item in routes) {
     new routes[item]();
 }
