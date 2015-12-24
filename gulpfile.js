@@ -11,7 +11,7 @@ nodemon({
 });
 
 gulp.task('watch', function () {
-    watch(['server.js', './routes/**/*'], function () {
+    watch(['server.js', './app/**/*'], function () {
         nodemon.restart();
     });
 });

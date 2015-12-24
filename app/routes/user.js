@@ -1,6 +1,5 @@
 'use strict';
-
-var Samurai = require('../lib/samurai');
+var Samurai = require('../../lib/samurai');
 
 class User extends Samurai.Route{
 
