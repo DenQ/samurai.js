@@ -8,28 +8,33 @@ class User extends Samurai.Route{
     }
 
     Get() {
-        this.controllerAction();
-        this.reply('Get id - , ' + encodeURIComponent(this.request.params.id) + '!');
+        this.controllerAction.bind({
+            route: this
+        })();
     }
 
     GetAll() {
-        this.controllerAction();
-        this.reply('Get all');
+        this.controllerAction.bind({
+            route: this
+        })();
     }
 
     Post() {
-        this.controllerAction();
-        this.reply('Get id - , ' + encodeURIComponent(this.request.params.id) + '!');
+        this.controllerAction.bind({
+            route: this
+        })();
     }
 
     Put() {
-        this.controllerAction();
-        this.reply('Get id - , ' + encodeURIComponent(this.request.params.id) + '!');
+        this.controllerAction.bind({
+            route: this
+        })();
     }
 
     Delete() {
-        this.controllerAction();
-        this.reply('Get id - , ' + encodeURIComponent(this.request.params.id) + '!');
+        this.controllerAction.bind({
+            route: this
+        })();
     }
 }
 

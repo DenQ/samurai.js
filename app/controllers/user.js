@@ -9,18 +9,28 @@ class User extends Samurai.Controller{
     }
 
     Get() {
-        console.log('controller get'.yellow);
+        var route = this.route;
+        route.reply('Get id - , ' + encodeURIComponent(route.request.params.id) + '!');
+        console.log('controller get -- '.yellow);
     }
     GetAll() {
+        var route = this.route;
+        route.reply('Get All!');
         console.log('controller get all'.yellow);
     }
     Post() {
+        var route = this.route;
+        route.reply('Get id - , ' + encodeURIComponent(route.request.params.id) + '!');
         console.log('controller post'.yellow);
     }
     Put() {
+        var route = this.route;
+        route.reply('Get id - , ' + encodeURIComponent(route.request.params.id) + '!');
         console.log('controller put'.yellow);
     }
     Delete() {
+        var route = this.route;
+        route.reply('Get id - , ' + encodeURIComponent(route.request.params.id) + '!');
         console.log('controller delete'.yellow);
     }
 
