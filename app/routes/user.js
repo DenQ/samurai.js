@@ -7,7 +7,16 @@ class User extends Samurai.Route{
         super();
     }
 
+    //Runner() {
+
+        //console.log(555);
+        //this.controllerAction.bind({
+        //    route: this
+        //})();
+    //}
+
     Get() {
+        //super.Get();
         this.controllerAction.bind({
             route: this
         })();
