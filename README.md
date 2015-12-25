@@ -1,5 +1,5 @@
 # samurai.js
-This Js framework based on hapi.js.
+This Js server side framework based on hapi.js.
 
 # status
 Project just by begined development.
