@@ -3,24 +3,24 @@ var Samurai = require('../../lib/samurai');
 
 class User extends Samurai.Route{
 
-    Get(request, reply) {
-        reply('Get id - , ' + encodeURIComponent(request.params.id) + '!');
+    Get() {
+        this.reply('Get id - , ' + encodeURIComponent(this.request.params.id) + '!');
     }
 
-    GetAll(request, reply) {
-        reply('Get all');
+    GetAll() {
+        this.reply('Get all');
     }
 
-    Post(request, reply) {
-        reply('Get id - , ' + encodeURIComponent(request.params.id) + '!');
+    Post() {
+        this.reply('Get id - , ' + encodeURIComponent(this.request.params.id) + '!');
     }
 
-    Put(request, reply) {
-        reply('Get id - , ' + encodeURIComponent(request.params.id) + '!');
+    Put() {
+        this.reply('Get id - , ' + encodeURIComponent(this.request.params.id) + '!');
     }
 
-    Delete(request, reply) {
-        reply('Get id - , ' + encodeURIComponent(request.params.id) + '!');
+    Delete() {
+        this.reply('Get id - , ' + encodeURIComponent(this.request.params.id) + '!');
     }
 }
 
