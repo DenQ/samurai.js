@@ -7,7 +7,6 @@ class User extends Samurai.Route{
         super();
     }
 
-
     Get(request, reply) {
         super.Get(request, reply);
     }

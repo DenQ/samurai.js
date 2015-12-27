@@ -5,8 +5,8 @@ var colors = require('colors');
 
 class Index extends Samurai.View{
 
-    constructor() {
-        super();
+    constructor(obj) {
+        super(obj);
     }
 }
 
