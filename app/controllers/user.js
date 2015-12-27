@@ -4,15 +4,10 @@ var colors = require('colors');
 
 class User extends Samurai.Controller{
 
-    constructor() {
-        super();
+    Get() {
+        this.reply('Get id - , ' + encodeURIComponent(this.request.params.id) + '!');
     }
 
-    Get() {
-        var route = this.route;
-        route.reply('Get id - , ' + encodeURIComponent(route.request.params.id) + '!');
-        console.log('controller get -- '.yellow);
-    }
     GetAll() {
         var route = this.route;
         route.reply('Get All!');

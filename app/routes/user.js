@@ -7,43 +7,25 @@ class User extends Samurai.Route{
         super();
     }
 
-    //Runner() {
 
-        //console.log(555);
-        //this.controllerAction.bind({
-        //    route: this
-        //})();
-    //}
-
-    Get() {
-        //super.Get();
-        this.controllerAction.bind({
-            route: this
-        })();
+    Get(request, reply) {
+        super.Get(request, reply);
     }
 
     GetAll() {
-        this.controllerAction.bind({
-            route: this
-        })();
+        super.GetAll(request, reply);
     }
 
     Post() {
-        this.controllerAction.bind({
-            route: this
-        })();
+        super.Post(request, reply);
     }
 
     Put() {
-        this.controllerAction.bind({
-            route: this
-        })();
+        super.Put(request, reply);
     }
 
     Delete() {
-        this.controllerAction.bind({
-            route: this
-        })();
+        super.Delete(request, reply);
     }
 }
 
