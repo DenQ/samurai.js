@@ -23,11 +23,13 @@
     "require-dir": "^0.3.0"
   },
   "devDependencies": {
+    "code": "^2.1.0",
     "colors": "^1.1.2",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-nodemon": "^2.0.4",
     "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.5"
+    "gulp-watch": "^4.3.5",
+    "lab": "^8.0.1"
   }
 }
