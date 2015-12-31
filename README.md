@@ -12,12 +12,20 @@ or
 
     node app.js --harmony
 
-## Showly result
+# Showly on browser
 
 * http://localhost:5200/user/1 -get request from one row
 * http://localhost:5200/users -get request from many rows
 
-OR
-CuRL for methds [post, put, delete, get] on route /user/{id}
+# CURL
+    curl -X GET http://localhost:5200/user/1;echo
+    curl -X GET http://localhost:5200/users;echo
+    curl -X POST http://localhost:5200/user/1;echo
+    curl -X PUT http://localhost:5200/user/1;echo
+    curl -X DELETE http://localhost:5200/user/1;echo
+
+# Testing
+    lab tests/unit.js
+
 
 
