@@ -20,7 +20,8 @@
     "good": "^6.4.0",
     "good-console": "^5.2.0",
     "hapi": "^11.1.2",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "vision": "^4.0.1"
   },
   "devDependencies": {
     "code": "^2.1.0",
