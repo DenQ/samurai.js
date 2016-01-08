@@ -20,7 +20,9 @@ server.register(Vision, (err) => {
         engines: {
             hbs: Handlebars,
         },
-        path: __dirname + '/app/templates'
+        path: __dirname + '/app/templates',
+        //layout: true,
+        layoutPath: __dirname + '/app/templates/layouts'
     });
 
 });
