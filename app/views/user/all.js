@@ -5,6 +5,10 @@ var colors = require('colors');
 
 class All extends Samurai.View{
 
+    Init() {
+        super.Init();
+    }
+
     Render() {
         //this.obj.reply('Get All!!!');
 
@@ -12,7 +16,7 @@ class All extends Samurai.View{
             title: 'Title...',
             message: 'Hello World!'
         }, {
-            layout: 'main'
+            layout: this.layout
         });
     }
 }
